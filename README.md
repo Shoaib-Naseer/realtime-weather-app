@@ -16,8 +16,9 @@ Responsive Real time Weather Map Built in HTML,CSS,JS
 ## Demo
 ### Desktop
 ![Desktop Screenshot](assets/images/screenshots/Desktop.png)
+
 ### Live Demo
-[Live Demo]([(https://moonlit-stardust-781644.netlify.app/#/current-location)])
+[Live Demo](https://moonlit-stardust-781644.netlify.app/#/current-location)
 
 ## Features
 - Update weather based on current location
