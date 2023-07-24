@@ -37,7 +37,7 @@ export const url = {
      * @param {string} query Search Query e.g. : "Islamabad" 
      * @returns 
      */
-    geoCoding(query){
-        return `http://api.openweathermap.org/geo/1.0/direct?${query}&limit=5`
+    geo(query){
+        return `http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5`
     }
 }

@@ -17,7 +17,7 @@ export const weekDayNames = [
     "Saturday"
 ]
 
-export const monthName = [
+export const monthNames = [
     "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
 ]
 
@@ -30,8 +30,8 @@ export const monthName = [
 export const getDate = function (dateUnix, timezone) {
     const date = new Date((dateUnix + timezone) * 1000);
     const weekDayName = weekDayNames[date.getUTCDay()];
-    const monthName = monthNames[date.getUTCDate()];
-
+    const monthName = monthNames[date.getUTCMonth()];
+    
     return `${weekDayName} ${date.getUTCDate()}, ${monthName} `
 }
 
@@ -57,7 +57,7 @@ export const getTime = function (dateUnix, timezone) {
  * @param {number} timezone - The time zone shift in seconds.
  * @returns {string} The formatted time with AM or PM. e.g. "HH AM/PM "
  */
-export const Hours = function (dateUnix, timezone) {
+export const getHours = function (dateUnix, timezone) {
     const date = new Date((dateUnix + timezone) * 1000);
     let hours = date.getUTCHours();
     const period = hours >= 12 ? 'PM' : 'AM';

@@ -145,7 +145,7 @@ sup {
 
 sub,
 sup {
-  font-size: .75rem;
+  font-size: .95rem;
 }
 
 html {
@@ -159,7 +159,7 @@ body {
   color: var(--on-background);
   font-size: var(--body-3);
   overflow: auto;
-  /* height: 300vh; */
+
 }
 
 :focus-visible {
@@ -357,6 +357,15 @@ body {
 }
 .label-2 {
   font-size: var(--label-2);
+}
+
+.fade-in {
+  animation: fade-in 250ms ease forwards;
+}
+
+@keyframes fade-in {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
 }
 
 
