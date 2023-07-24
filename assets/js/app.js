@@ -187,19 +187,19 @@ export const updateWeather = function (lat, lon) {
                     <span class="m-icon">air</span>
                     <ul class="card-list">
                         <li class="card-item">
-                            <p class="title-1">${pm2_5}</p>
+                            <p class="title-1">${(pm2_5).toFixed(2)}</p>
                             <p class="label-1">PM<sub>2.5</sub></p>
                         </li>
                         <li class="card-item">
-                            <p class="title-1">${so2}</p>
+                            <p class="title-1">${(so2).toFixed(2)}</p>
                             <p class="label-1">SO<sub>2</sub></p>
                         </li>
                         <li class="card-item">
-                            <p class="title-1">${no2}</p>
+                            <p class="title-1">${(no2).toFixed(2)}</p>
                             <p class="label-1">NO<sub>2</sub></p>
                         </li>
                         <li class="card-item">
-                            <p class="title-1">${o3}</p>
+                            <p class="title-1">${(o3).toFixed(2)}</p>
                             <p class="label-1">0<sub>3</sub></p>
                         </li>
                     </ul>

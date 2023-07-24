@@ -7,7 +7,8 @@
 
 'use strict'
 
-const api_key = "69259004c2ebac362b71a19cefe024b6";
+const api_key = process.env.API_KEY;
+
 
 /**
  * 
